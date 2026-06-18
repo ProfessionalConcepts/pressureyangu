@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us - PressureYangu</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#001453",
+                    "secondary-fixed": "#6ffbbe",
+                    "primary-fixed-dim": "#b8c4ff",
+                    "on-secondary-fixed": "#002113",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "surface": "#f9f9ff",
+                    "secondary-container": "#6cf8bb",
+                    "outline-variant": "#c4c5d5",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#b8c4ff",
+                    "inverse-on-surface": "#ebf1ff",
+                    "surface-container-low": "#f0f3ff",
+                    "background": "#f9f9ff",
+                    "tertiary-fixed": "#ffddb8",
+                    "on-tertiary-container": "#ffa929",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#f9f9ff",
+                    "tertiary": "#4c2e00",
+                    "secondary": "#006c49",
+                    "on-background": "#151c27",
+                    "tertiary-container": "#6b4200",
+                    "surface-container": "#e7eefe",
+                    "surface-tint": "#3755c3",
+                    "primary-container": "#1e40af",
+                    "on-surface": "#151c27",
+                    "on-secondary-fixed-variant": "#005236",
+                    "on-secondary-container": "#00714d",
+                    "surface-container-high": "#e2e8f8",
+                    "surface-dim": "#d3daea",
+                    "inverse-surface": "#2a313d",
+                    "primary-fixed": "#dde1ff",
+                    "secondary-fixed-dim": "#4edea3",
+                    "surface-variant": "#dce2f3",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ba1a1a",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed-dim": "#ffb95f",
+                    "primary": "#00288e",
+                    "on-surface-variant": "#444653",
+                    "on-primary-fixed-variant": "#173bab",
+                    "outline": "#757684",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#a8b8ff",
+                    "surface-container-highest": "#dce2f3",
+                    "on-tertiary-fixed-variant": "#653e00",
+                    "on-tertiary-fixed": "#2a1700"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-lg": "32px",
+                    "stack-sm": "8px",
+                    "margin-mobile": "16px",
+                    "stack-md": "16px",
+                    "margin-desktop": "40px",
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "container-max": "1280px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Inter", "sans-serif"],
+                    "body-lg": ["Inter", "sans-serif"],
+                    "headline-md": ["Inter", "sans-serif"],
+                    "headline-xl-mobile": ["Inter", "sans-serif"],
+                    "body-md": ["Inter", "sans-serif"],
+                    "headline-xl": ["Inter", "sans-serif"],
+                    "label-md": ["Inter", "sans-serif"],
+                    "data-display": ["Inter", "sans-serif"]
+            },
+            "fontSize": {
+                    "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-xl-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "data-display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700"}]
+            }
+          }
+        }
+      }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .icon-fill { font-variation-settings: 'FILL' 1; }
+        
+        /* Custom Level 2 shadow based on guidelines */
+        .shadow-level-2 {
+            box-shadow: 0px 4px 12px rgba(0, 40, 142, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface w-full shadow-sm relative z-50">
+<div class="sticky top-0 z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full max-w-container-max mx-auto">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined icon-fill text-primary text-[32px]">favorite</span>
+<span class="text-headline-md font-headline-md font-bold text-primary">PressureYangu</span>
+</div>
+<nav class="hidden md:flex items-center gap-gutter">
+<a class="text-on-surface-variant hover:text-primary hover:bg-primary-container/10 px-3 py-2 rounded-md transition-colors font-label-md text-label-md" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-primary hover:bg-primary-container/10 px-3 py-2 rounded-md transition-colors font-label-md text-label-md" href="#">How It Works</a>
+<a class="text-on-surface-variant hover:text-primary hover:bg-primary-container/10 px-3 py-2 rounded-md transition-colors font-label-md text-label-md" href="#">Value Proposition</a>
+<a class="text-primary border-b-2 border-primary pb-1 px-3 py-2 font-label-md text-label-md" href="#">About Us</a>
+</nav>
+<button class="hidden md:block bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-full hover:bg-on-primary-fixed-variant transition-colors">
+                Join Pilot
+            </button>
+<!-- Mobile Menu Icon (simplified for layout) -->
+<button class="md:hidden text-on-surface-variant">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow flex flex-col">
+<!-- Hero Section -->
+<section class="w-full bg-surface-container-low py-16 md:py-24 px-margin-mobile md:px-margin-desktop text-center flex flex-col items-center relative overflow-hidden">
+<!-- Subtle Geometric Background Accent (CSS Pattern) -->
+<div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(var(--tw-colors-outline-variant) 1px, transparent 1px); background-size: 24px 24px;"></div>
+<div class="max-w-3xl mx-auto relative z-10 flex flex-col items-center gap-stack-lg">
+<span class="bg-secondary-container text-on-secondary-container font-label-md text-label-md px-4 py-1 rounded-full uppercase tracking-wider inline-block">Our Mission</span>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile md:font-headline-xl md:text-headline-xl text-on-surface max-w-2xl leading-tight">
+                    We Are Nurses First. Entrepreneurs Second.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    Built on clinical expertise and deeply rooted in local communities, PressureYangu is designed by healthcare professionals who understand patient care from the inside out.
+                </p>
+</div>
+</section>
+<!-- The Origin Story -->
+<section class="w-full py-16 md:py-24 px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<!-- Image Side -->
+<div class="relative w-full aspect-[4/3] rounded-xl overflow-hidden shadow-level-2 border border-outline-variant/30">
+<img alt="Healthcare origin story" class="w-full h-full object-cover" data-alt="A warm, professional photograph of a Kenyan nurse comforting an elderly patient in a modern, brightly lit clinical setting. The scene evokes calm empowerment and compassionate care. Soft natural light filters through a window, highlighting the blue and subtle green accents of the clinic's decor, aligning with a clean, medical aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYuJwIOXP6Q_LycNpFJu2HjTQ6-SG5swSwubUAiA63_Lsp3DWxX9eRK6KrkdQ0PInSIaeQlJIEt-KPYJycxi2PprZgIEk9u2lS_NjyRRzGmuy27VnpUhd5DGwf53h2xMazHcNFUcjyeVvxx2h8nF0EzTwL_Cne4y6HFwH7pmBj4QMsOe5BGLQsv7ZWvgKRE6NqKNZeqXi3SIxoMoC2oioauITWXx7IPhNucA7wDlM4Qm2-nfsxV8I4vvFXCc8v4w7CHCYDwSNzaSg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent pointer-events-none"></div>
+</div>
+<!-- Text Side -->
+<div class="flex flex-col gap-stack-md">
+<h2 class="font-headline-lg text-headline-lg text-primary">The Origin Story</h2>
+<div class="relative p-8 bg-surface-container rounded-xl border border-outline-variant">
+<span class="material-symbols-outlined text-outline-variant absolute top-4 left-4 text-4xl opacity-30">format_quote</span>
+<p class="font-body-lg text-body-lg text-on-surface italic relative z-10 pt-4 pb-4">
+                            "Watching my mother navigate the complexities of managing her hypertension was a wake-up call. The anxiety of tracking readings, the fragmented communication with her doctor, and the sheer burden of chronic illness felt overwhelming. As a nurse, I knew the system. As a son, I felt the gap. PressureYangu was born from the desire to bridge that gap—to provide clinical precision wrapped in compassionate, accessible design."
+                        </p>
+<div class="flex items-center gap-4 mt-4 border-t border-outline-variant pt-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container font-headline-md text-headline-md">
+                                OL
+                            </div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface text-[18px]">Okumu Lozete</h3>
+<p class="font-label-md text-label-md text-primary">Founder &amp; CEO</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Team Section -->
+<section class="w-full py-16 md:py-24 px-margin-mobile md:px-margin-desktop bg-surface-container-lowest border-t border-outline-variant/20">
+<div class="max-w-container-max mx-auto flex flex-col gap-stack-lg">
+<div class="text-center max-w-2xl mx-auto flex flex-col gap-stack-sm">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Meet The Clinical Team</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        A multidisciplinary team united by a background in nursing and a passion for redefining patient experience in Kenya.
+                    </p>
+</div>
+<!-- Bento Grid Layout for Team -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Team Card 1 (Founder) -->
+<div class="bg-surface rounded-xl border border-outline-variant p-stack-md shadow-level-2 flex flex-col items-center text-center gap-stack-sm hover:-translate-y-1 transition-transform duration-300">
+<div class="w-24 h-24 rounded-full overflow-hidden mb-2 border-4 border-surface-container">
+<img class="w-full h-full object-cover" data-alt="A highly professional portrait of a confident Kenyan man in a neat clinical scrub top or smart-casual medical attire. The background is a clean, bright, out-of-focus hospital corridor or clinic setting, conveying medical authority and trust. Soft, even lighting highlights his reassuring expression." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRtpLOQ6yFQgd81MCd8Cg7KzA4osX3GxlU-UxGSQTniTpXI-Q19ZdlY8SbPkPEEl7CFXWne94bc_XbT1c5n3j1EYmDu9hTkkfPXXVKuM3j5FQ-e6XKILEN03ksFdybHcMhx1fcdvM1khRvJDxQaUIc-bzd0agzKY9Ch2Oq41w6jfkqauYdKpD0jxMaEALp71m3YhtCwaakwZj-oVvqFOPMKQ9PqgUHKq0miNnYTWkbmfVv7Azio9C1-Q12TAe2IIsXcyv4OCt0SPI"/>
+</div>
+<span class="bg-surface-tint/10 text-surface-tint font-label-md text-[12px] px-3 py-1 rounded-full uppercase tracking-wider">Nursing Professional</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Okumu Lozete</h3>
+<p class="font-label-md text-label-md text-primary">Founder &amp; Visionary</p>
+</div>
+<!-- Team Card 2 -->
+<div class="bg-surface rounded-xl border border-outline-variant p-stack-md shadow-level-2 flex flex-col items-center text-center gap-stack-sm hover:-translate-y-1 transition-transform duration-300">
+<div class="w-24 h-24 rounded-full overflow-hidden mb-2 border-4 border-surface-container">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a focused Kenyan man wearing a white lab coat over a light blue shirt. The setting is bright and modern, suggesting an innovative health tech workspace. The lighting is crisp, evoking a sense of clinical precision and leadership." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYsriYmah38VBzQq3Pii4_QUXpe_PVyOQkKh9g64YK1WTDbl6nswQrizMfzkldMyLDkTynrgT6N5YvPoGjSBemtTFw2NkK5Qak_hHVRPwR3XydZy3XJ7iOVPmukIkHkv1nM37iR7tniF_JMU0ssesypmeM0QDaqS2ImPU_qTl49c81tO4T-mNCAiOIEqaZSECFc3lMN6WHcJlD68KrRqtmRkAyUmlEfiP4ceEbreWdl8lVJDNDegNTPrCRKcLyuZhSjqXqFc-Ytsc"/>
+</div>
+<span class="bg-surface-tint/10 text-surface-tint font-label-md text-[12px] px-3 py-1 rounded-full uppercase tracking-wider">Nursing Professional</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Enock Agwata</h3>
+<p class="font-label-md text-label-md text-primary">Clinical Lead</p>
+</div>
+<!-- Team Card 3 -->
+<div class="bg-surface rounded-xl border border-outline-variant p-stack-md shadow-level-2 flex flex-col items-center text-center gap-stack-sm hover:-translate-y-1 transition-transform duration-300">
+<div class="w-24 h-24 rounded-full overflow-hidden mb-2 border-4 border-surface-container">
+<img class="w-full h-full object-cover" data-alt="A warm, approachable professional portrait of a Kenyan woman in neat clinical attire. She has a welcoming smile, set against a pristine white and soft blue background that feels calming and trustworthy. The image quality is high, emphasizing compassion and patient care expertise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7ZcCgQrErckwtiepw5NKLhugZfKwLb0TQIdqK1TtF0_nJFONns-zwLmaRuhSnv-4l3iGlzfwRYCdgtzP-rV1zLmZaEyBs-Di5sbjV9p4bdtrv3cBFYoUW2naR0C79o4G70M1TPNiRwOECf7w7w4aY-Q0SsxTjrJVCrrzq49liwqHW1FsiJF96nLDhhOr-S5sg_Y6_f9o4QZmwRSqbLuKuDs2wJD82s4Q0aVOwgZQyYS2kQllWI0Uy0cJhdSXRq8Nyir5U5d3rZw0"/>
+</div>
+<span class="bg-surface-tint/10 text-surface-tint font-label-md text-[12px] px-3 py-1 rounded-full uppercase tracking-wider">Nursing Professional</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Maureen Chepkirui</h3>
+<p class="font-label-md text-label-md text-primary">Patient Experience</p>
+</div>
+<!-- Team Card 4 -->
+<div class="bg-surface rounded-xl border border-outline-variant p-stack-md shadow-level-2 flex flex-col items-center text-center gap-stack-sm hover:-translate-y-1 transition-transform duration-300">
+<div class="w-24 h-24 rounded-full overflow-hidden mb-2 border-4 border-surface-container">
+<img class="w-full h-full object-cover" data-alt="A professional portrait of a Kenyan man with a reliable and steady expression, dressed in a light-colored button-up shirt suitable for a healthcare operations role. The background is a clean, modern office environment with subtle green accents, conveying efficiency and stability." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC15bjCtGLfWGvpZ6jZrdMjGXJIXaxCOR9kRbZTRd_9I7cWwoejbnDBaltqDzfY0Q0vxYJ0ryMYcrey17sdjmGQmKEeveauDqtUD7tV5QFyCBMURHrgYEMvwt3xFmkWJjBGVc-W-MC06p8T0Aj5S-HW-JZdM23rzKDlKuPDClDVlHTDd6pzdULzSbko3Fp5Fw3ZbD0n8AnyEe0qItazPm-ZQebGURypgiuxzGEmxfpmKeS4nLCmHw2W5z_hlOUmERxLjpSCWCnLVck"/>
+</div>
+<span class="bg-surface-tint/10 text-surface-tint font-label-md text-[12px] px-3 py-1 rounded-full uppercase tracking-wider">Nursing Professional</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Derick Sifuna</h3>
+<p class="font-label-md text-label-md text-primary">Operations</p>
+</div>
+<!-- Team Card 5 -->
+<div class="bg-surface rounded-xl border border-outline-variant p-stack-md shadow-level-2 flex flex-col items-center text-center gap-stack-sm hover:-translate-y-1 transition-transform duration-300">
+<div class="w-24 h-24 rounded-full overflow-hidden mb-2 border-4 border-surface-container">
+<img class="w-full h-full object-cover" data-alt="A modern professional headshot of a Kenyan man representing health technology. He wears a smart-casual dark blue shirt. The background features subtle, abstract blue gradients indicating digital innovation while maintaining a clinical and trustworthy light-mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl6xkMcGteNHU9hDDRuoYLsjyv60qD1oP3b2IujC3sXcF_O_I5_ZHSmZP2NfSllfh5gqCIFgDmkOnm18dwCUtYqm4Vyod5tALPtndWKs3dibDUP83zFiiVVGdxX35a1PhqzMJHOyl8AgptlAEvq-w2kQph64Fs2I6HXdQt-h3_6bzIkQchpR2KTji7rlyImtfLy9B4hWcsSKXkNYZhL1YKHwmdZrbSPVMFpuKBeo3jq695xYBC-4kONBhAppACEepORa5vEexb8Sk"/>
+</div>
+<span class="bg-surface-tint/10 text-surface-tint font-label-md text-[12px] px-3 py-1 rounded-full uppercase tracking-wider">Nursing Professional</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Dennis Kipkoech</h3>
+<p class="font-label-md text-label-md text-primary">Technology</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Slogan Section -->
+<section class="w-full py-24 px-margin-mobile md:px-margin-desktop bg-primary text-on-primary flex justify-center items-center">
+<div class="max-w-4xl text-center">
+<span class="material-symbols-outlined text-secondary-fixed text-5xl mb-6 block">favorite</span>
+<h2 class="font-headline-lg text-headline-lg md:font-headline-xl md:text-headline-xl leading-tight">
+                    PressureYangu — Helping patients like Lozete’s mom, one reading at a time.
+                </h2>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full bg-surface-container border-t border-outline-variant">
+<div class="w-full py-stack-lg px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-start md:items-center gap-gutter max-w-container-max mx-auto">
+<div class="flex flex-col gap-2">
+<span class="text-headline-sm font-headline-sm font-bold text-on-surface">PressureYangu</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+                    © 2024 PressureYangu by Lozete Health. Dedicated to heart health across Kenya.
+                </p>
+</div>
+<nav class="flex flex-wrap gap-x-6 gap-y-2 mt-4 md:mt-0">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Pilot Program</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Support</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors" href="#">Investor Relations</a>
+</nav>
+</div>
+</footer>
+</body></html>

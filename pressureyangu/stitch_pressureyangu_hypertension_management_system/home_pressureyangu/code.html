@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PressureYangu - Hypertension Management</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed": "#001453",
+                      "secondary-fixed": "#6ffbbe",
+                      "primary-fixed-dim": "#b8c4ff",
+                      "on-secondary-fixed": "#002113",
+                      "on-tertiary": "#ffffff",
+                      "on-error": "#ffffff",
+                      "surface": "#f9f9ff",
+                      "secondary-container": "#6cf8bb",
+                      "outline-variant": "#c4c5d5",
+                      "on-error-container": "#93000a",
+                      "inverse-primary": "#b8c4ff",
+                      "inverse-on-surface": "#ebf1ff",
+                      "surface-container-low": "#f0f3ff",
+                      "background": "#f9f9ff",
+                      "tertiary-fixed": "#ffddb8",
+                      "on-tertiary-container": "#ffa929",
+                      "on-primary": "#ffffff",
+                      "surface-bright": "#f9f9ff",
+                      "tertiary": "#4c2e00",
+                      "secondary": "#006c49",
+                      "on-background": "#151c27",
+                      "tertiary-container": "#6b4200",
+                      "surface-container": "#e7eefe",
+                      "surface-tint": "#3755c3",
+                      "primary-container": "#1e40af",
+                      "on-surface": "#151c27",
+                      "on-secondary-fixed-variant": "#005236",
+                      "on-secondary-container": "#00714d",
+                      "surface-container-high": "#e2e8f8",
+                      "surface-dim": "#d3daea",
+                      "inverse-surface": "#2a313d",
+                      "primary-fixed": "#dde1ff",
+                      "secondary-fixed-dim": "#4edea3",
+                      "surface-variant": "#dce2f3",
+                      "surface-container-lowest": "#ffffff",
+                      "error": "#ba1a1a",
+                      "error-container": "#ffdad6",
+                      "tertiary-fixed-dim": "#ffb95f",
+                      "primary": "#00288e",
+                      "on-surface-variant": "#444653",
+                      "on-primary-fixed-variant": "#173bab",
+                      "outline": "#757684",
+                      "on-secondary": "#ffffff",
+                      "on-primary-container": "#a8b8ff",
+                      "surface-container-highest": "#dce2f3",
+                      "on-tertiary-fixed-variant": "#653e00",
+                      "on-tertiary-fixed": "#2a1700"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-lg": "32px",
+                      "stack-sm": "8px",
+                      "margin-mobile": "16px",
+                      "stack-md": "16px",
+                      "margin-desktop": "40px",
+                      "gutter": "24px",
+                      "unit": "8px",
+                      "container-max": "1280px"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "headline-md": ["Inter"],
+                      "headline-xl-mobile": ["Inter"],
+                      "body-md": ["Inter"],
+                      "headline-xl": ["Inter"],
+                      "label-md": ["Inter"],
+                      "data-display": ["Inter"]
+              },
+              "fontSize": {
+                      "headline-lg": ["30px", {"lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "headline-xl-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                      "data-display": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "700"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Local Accent Pattern */
+        .bg-bead-pattern {
+            background-image: radial-gradient(circle at 2px 2px, #c4c5d5 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        
+        /* Level 2 Card Shadow per style guide */
+        .shadow-level-2 {
+            box-shadow: 0 4px 12px rgba(0, 40, 142, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="bg-surface sticky top-0 z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 w-full max-w-container-max mx-auto border-none">
+<div class="flex items-center gap-2 text-primary font-headline-md text-headline-md font-bold">
+<span class="material-symbols-outlined filled" style="font-size: 32px;">favorite</span>
+<span>PressureYangu</span>
+</div>
+<nav class="hidden md:flex items-center gap-gutter">
+<!-- Active: Home -->
+<a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1 transition-colors hover:bg-primary-container/10 px-2 rounded-t-sm" href="#">Home</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hover:bg-primary-container/10 px-2 py-1 rounded-sm" href="#">How It Works</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hover:bg-primary-container/10 px-2 py-1 rounded-sm" href="#">Value Proposition</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors hover:bg-primary-container/10 px-2 py-1 rounded-sm" href="#">About Us</a>
+</nav>
+<div class="hidden md:block">
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-full hover:bg-primary-container transition-colors shadow-sm">
+                Join Pilot
+            </button>
+</div>
+<!-- Mobile Menu Icon (Hidden on Desktop per JSON shell rules) -->
+<button class="md:hidden text-primary p-2">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative bg-surface w-full overflow-hidden">
+<!-- Decorative Accent -->
+<div class="absolute inset-0 bg-bead-pattern opacity-30 pointer-events-none"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg md:py-24 flex flex-col md:flex-row items-center gap-gutter relative z-10">
+<!-- Text Content -->
+<div class="w-full md:w-1/2 flex flex-col items-start text-left">
+<div class="inline-flex items-center gap-2 bg-surface-container-low text-primary font-label-md text-label-md px-3 py-1 rounded-full mb-stack-sm border border-primary/20">
+<span class="material-symbols-outlined" style="font-size: 16px;">verified</span>
+<span>Clinical Grade Accuracy</span>
+</div>
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile md:font-headline-xl md:text-headline-xl text-on-surface mb-stack-md leading-tight">
+                        Hypertension Management in Your Pocket
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-lg max-w-xl">
+                        A small, affordable, portable blood pressure monitor linked to a smart mobile app. No hospital queues. No forgotten pills. No unanswered questions.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+<button class="bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded-full hover:bg-primary-container transition-colors shadow-md w-full sm:w-auto flex justify-center items-center gap-2">
+                            Join Our Pilot Program
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-transparent border-2 border-primary text-primary font-label-md text-label-md px-8 py-4 rounded-full hover:bg-surface-container transition-colors w-full sm:w-auto flex justify-center items-center">
+                            Learn How It Works
+                        </button>
+</div>
+</div>
+<!-- Hero Image -->
+<div class="w-full md:w-1/2 mt-stack-lg md:mt-0 relative">
+<div class="absolute -inset-4 bg-primary/5 rounded-[2rem] transform rotate-3"></div>
+<img alt="Hero Image" class="relative rounded-xl shadow-level-2 w-full object-cover aspect-[4/3] border border-outline-variant/30" data-alt="A brightly lit, modern medical lifestyle photograph set in a contemporary Kenyan home. A middle-aged Kenyan woman sits comfortably on a stylish sofa, smiling confidently at her smartphone. On the table next to her rests a compact, modern digital blood pressure monitor. Soft natural light streams through a window, creating a serene, empowering mood. The palette features crisp whites, soft grays, and subtle accents of deep health blue, perfectly capturing the PressureYangu clinical brand identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKQUkrIABEOFmbeJO93TWhbQyzSFvExZDRtMyM1vsSYkuJhFb8hBf8by5UH_3hTY_oXDma6wMqy5PPpZH3QkB7WSIpWoknT1RK2Kb0EZ0icqoKNDENhX6WJz6sJDxnR8fQQkC1xMpbOtwgMhMu2HMfk_wkutu0nhM7pbaCKoWuIwOV9v5wNyVFmbpSqwGE595wBBtZq0cAfxCipLo3xBkpGuHDU3kC6bcch310N3XkRKi-z-F9nz3qPMCSdbGYnjl47582yo4mby4"/>
+<!-- Floating Data Card -->
+<div class="absolute -bottom-6 -left-6 bg-surface p-4 rounded-xl shadow-level-2 border border-outline-variant/20 flex items-center gap-4 animate-bounce" style="animation-duration: 3s;">
+<div class="bg-secondary-container text-on-secondary-container p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined filled">monitor_heart</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-on-surface-variant">Last Reading</div>
+<div class="font-headline-md text-headline-md text-on-surface">118 <span class="text-body-md font-body-md text-outline">/ 78 mmHg</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Problem Section -->
+<section class="bg-surface-container-low w-full py-stack-lg md:py-24 border-y border-outline-variant/20">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">The Silent Killer</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Hypertension often shows no symptoms until a crisis occurs. The statistics highlight a critical gap in daily, accessible management.
+                    </p>
+</div>
+<!-- Bento Grid for Stats -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Stat Card 1 -->
+<div class="bg-surface rounded-xl p-stack-md shadow-level-2 border-t-4 border-t-error flex flex-col justify-between min-h-[200px]">
+<span class="material-symbols-outlined text-outline mb-2">public</span>
+<div>
+<div class="font-data-display text-data-display text-error mb-1 tracking-tight">1.28B</div>
+<div class="font-body-md text-body-md text-on-surface-variant">Adults globally live with hypertension.</div>
+</div>
+</div>
+<!-- Stat Card 2 -->
+<div class="bg-surface rounded-xl p-stack-md shadow-level-2 border-t-4 border-t-on-tertiary-container flex flex-col justify-between min-h-[200px]">
+<span class="material-symbols-outlined text-outline mb-2">trending_down</span>
+<div>
+<div class="font-data-display text-data-display text-on-tertiary-container mb-1 tracking-tight">~70%</div>
+<div class="font-body-md text-body-md text-on-surface-variant">Of cases remain poorly controlled globally.</div>
+</div>
+</div>
+<!-- Stat Card 3 -->
+<div class="bg-surface rounded-xl p-stack-md shadow-level-2 border-t-4 border-t-tertiary flex flex-col justify-between min-h-[200px]">
+<span class="material-symbols-outlined text-outline mb-2">medication</span>
+<div>
+<div class="font-data-display text-data-display text-tertiary mb-1 tracking-tight">50%</div>
+<div class="font-body-md text-body-md text-on-surface-variant">Of patients stop taking their prescribed medication.</div>
+</div>
+</div>
+<!-- Stat Card 4 -->
+<div class="bg-surface rounded-xl p-stack-md shadow-level-2 border-t-4 border-t-primary flex flex-col justify-between min-h-[200px]">
+<span class="material-symbols-outlined text-outline mb-2">visibility_off</span>
+<div>
+<div class="font-data-display text-data-display text-primary mb-1 tracking-tight">46%</div>
+<div class="font-body-md text-body-md text-on-surface-variant">Of Kenyans with the condition are completely unaware.</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Solution Section -->
+<section class="bg-surface w-full py-stack-lg md:py-24">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Meet PressureYangu</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Transforming chronic care from isolated clinic visits into a continuous, empowering companion.
+                    </p>
+</div>
+<div class="flex flex-col gap-24">
+<!-- Feature 1 -->
+<div class="flex flex-col md:flex-row items-center gap-gutter">
+<div class="w-full md:w-1/2 order-2 md:order-1">
+<div class="bg-surface-container-low rounded-xl p-8 aspect-video flex items-center justify-center border border-outline-variant/30">
+<img alt="Blood Pressure Device" class="rounded-lg shadow-sm object-cover w-full h-full" data-alt="A close-up, highly detailed medical product shot of a sleek, portable digital blood pressure monitor resting on a clean, light wood table. The device features a large, highly legible digital display showing a healthy reading. The lighting is bright, sterile, and professional, characteristic of a premium clinical device. The background is a soft, out-of-focus medical blue and white environment, reinforcing trust and clinical authority within the modern PressureYangu design system." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpbEaYPCtJclLPAHcBCY8Plc67HflieeUfu9kZPQo0tBUAi8AvhzWBTsU3wfpZfTlLTqBPc59ItHNz92-vrUGlibyjvsJK8sX5A889gDqchpEoThBwBcgsRqsoVh4Sk2OJw5Y7moS2eA99uQ2ey9PqvNATZqlRavmd8-UdXj-HFvK8TswrKS66AlyBjHKzD93E3mnYJ498pRG65CCKG02iLhNlLqjXoBSzSGuV1umVDYQIvHOBA2_ev47_Ewg1MyHL76Oj1suM5VA"/>
+</div>
+</div>
+<div class="w-full md:w-1/2 order-1 md:order-2 flex flex-col items-start">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-4">
+<span class="font-headline-md text-headline-md">1</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Measure at Home</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                Use our clinically validated, affordable monitor in the comfort of your home. The simple cuff mechanism is designed for ease of use by all age groups, ensuring accurate readings without the stress of a clinic visit.
+                            </p>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="flex flex-col md:flex-row items-center gap-gutter">
+<div class="w-full md:w-1/2 flex flex-col items-start">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center mb-4">
+<span class="font-headline-md text-headline-md">2</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Scan &amp; Sync Automatically</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                                No manual data entry required. Simply open the PressureYangu app and scan the QR code displayed on the monitor's screen after your reading. The app securely and instantly logs your vitals to your personal health record.
+                            </p>
+</div>
+<div class="w-full md:w-1/2">
+<div class="bg-surface-container-low rounded-xl p-8 aspect-video flex items-center justify-center border border-outline-variant/30">
+<img alt="Scanning QR Code" class="rounded-lg shadow-sm object-cover w-full h-full" data-alt="A dynamic, over-the-shoulder shot of a person holding a modern smartphone, actively scanning a QR code displayed on a digital blood pressure monitor screen. The smartphone screen interface is clean, displaying a 'Scanning...' reticle. The lighting is bright and modern, set in a clean domestic environment. The image emphasizes seamless technology integration and user-friendly digital health interfaces, adhering to a crisp white, gray, and health-blue aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO4NYx3qHGlS7gpPUJcmiD9j9Dm003XgPPBFLVeW85FLhz0Kl0L0tVpdh7HPsOs7Q9Lm9s6SeKQjCDWMiIctb9UE2DNBsKDC1a79zmHQwDo0kxTURo3ySdYcyGqFR-iK7_rzxTfV5kbIXs-iDWeN8BP-cvmmvpUgMEgDkzq7jGOUUISXZ6FINxvJa52AJMY9vlBy4RVmFG166ftVHJ8T23S3Apnuhe0Q9oT-UOv2ZRHmH4455xB4NVl9qVUYHO64hCmV8056s-4Sk"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container border-t border-outline-variant w-full py-stack-lg px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-start gap-gutter max-w-container-max mx-auto mt-auto">
+<div class="flex flex-col gap-4">
+<div class="text-on-surface font-headline-sm font-bold text-lg flex items-center gap-2">
+<span class="material-symbols-outlined filled text-primary">favorite</span>
+                PressureYangu
+            </div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+                © 2024 PressureYangu by Lozete Health. Dedicated to heart health across Kenya.
+            </p>
+</div>
+<div class="flex flex-col md:flex-row gap-8 md:gap-16">
+<div class="flex flex-col gap-2">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-1" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-1" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-1" href="#">Pilot Program</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-1" href="#">Contact Support</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors py-1" href="#">Investor Relations</a>
+</div>
+</div>
+</footer>
+</body></html>
